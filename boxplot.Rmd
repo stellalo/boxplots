@@ -11,7 +11,7 @@ library(ggplot2)
 
 ```{r}
 #Load dataframe
-kegg <- read.delim("/Users/stella/KEGG_37.txt",sep = " ",header = T)
+kegg <- read.delim("KEGG_37.txt",sep = " ",header = T)
 #Set X37 as factor
 kegg$X37_EVIDENCE <- as.character(kegg$X37_EVIDENCE)
 kegg$X37_EVIDENCE <- as.factor(kegg$X37_EVIDENCE)
