@@ -1,0 +1,135 @@
+---
+title: "boxplot"
+output: html_document
+date: "2023-05-28"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(ggplot2)
+```
+
+```{r}
+#Load dataframe
+kegg <- read.delim("/Users/stella/KEGG_37.txt",sep = " ",header = T)
+#Set X37 as factor
+kegg$X37_EVIDENCE <- as.character(kegg$X37_EVIDENCE)
+kegg$X37_EVIDENCE <- as.factor(kegg$X37_EVIDENCE)
+
+```
+
+# K19306
+```{r}
+# x growth at 37, y kegg
+ggplot(data = kegg, mapping = aes(x = X37_EVIDENCE , y = K19306)) + geom_boxplot()
+```
+
+# K03767
+```{r}
+ggplot(data = kegg, mapping = aes(x = X37_EVIDENCE , y = K03767)) + geom_boxplot()
+```
+
+# K07565
+```{r}
+ggplot(data = kegg, mapping = aes(x = X37_EVIDENCE , y = K07565)) + geom_boxplot()
+```
+
+# K08516
+```{r}
+ggplot(data = kegg, mapping = aes(x = X37_EVIDENCE , y = K08516)) + geom_boxplot()
+```
+
+# K12823
+```{r}
+ggplot(data = kegg, mapping = aes(x = X37_EVIDENCE , y = K12823)) + geom_boxplot()
+```
+
+# K03264
+```{r}
+ggplot(data = kegg, mapping = aes(x = X37_EVIDENCE , y = K03264)) + geom_boxplot()
+```
+
+# K00389
+```{r}
+ggplot(data = kegg, mapping = aes(x = X37_EVIDENCE , y = K00389)) + geom_boxplot()
+```
+
+# K04043
+```{r}
+ggplot(data = kegg, mapping = aes(x = X37_EVIDENCE , y = K04043)) + geom_boxplot()
+```
+
+# K03522
+```{r}
+ggplot(data = kegg, mapping = aes(x = X37_EVIDENCE , y = K03522)) + geom_boxplot()
+```
+
+# K14549
+```{r}
+ggplot(data = kegg, mapping = aes(x = X37_EVIDENCE , y = K14549)) + geom_boxplot()
+```
+
+# K14560
+```{r}
+ggplot(data = kegg, mapping = aes(x = X37_EVIDENCE , y = K14560)) + geom_boxplot()
+```
+
+# K11600
+```{r}
+ggplot(data = kegg, mapping = aes(x = X37_EVIDENCE , y = K11600)) + geom_boxplot()
+```
+
+# K03549
+```{r}
+ggplot(data = kegg, mapping = aes(x = X37_EVIDENCE , y = K03549)) + geom_boxplot()
+```
+
+# K03247
+```{r}
+ggplot(data = kegg, mapping = aes(x = X37_EVIDENCE , y = K03247)) + geom_boxplot()
+```
+
+# K02154
+```{r}
+ggplot(data = kegg, mapping = aes(x = X37_EVIDENCE , y = K02154)) + geom_boxplot()
+```
+
+# K14815
+```{r}
+ggplot(data = kegg, mapping = aes(x = X37_EVIDENCE , y = K14815)) + geom_boxplot()
+```
+
+# K14550
+```{r}
+ggplot(data = kegg, mapping = aes(x = X37_EVIDENCE , y = K14550)) + geom_boxplot()
+```
+
+# K14548
+```{r}
+ggplot(data = kegg, mapping = aes(x = X37_EVIDENCE , y = K14548)) + geom_boxplot()
+```
+
+# K02151
+```{r}
+ggplot(data = kegg, mapping = aes(x = X37_EVIDENCE , y = K02151)) + geom_boxplot()
+```
+
+# K02732
+```{r}
+ggplot(data = kegg, mapping = aes(x = X37_EVIDENCE , y = K02732)) + geom_boxplot()
+```
+
+# K02154
+```{r}
+ggplot(data = kegg, mapping = aes(x = X37_EVIDENCE , y = K02154)) + geom_boxplot()
+```
+
+# K01673
+```{r}
+ggplot(data = kegg, mapping = aes(x = X37_EVIDENCE , y = K01673)) + geom_boxplot()
+```
+
+# K11294
+```{r}
+ggplot(data = kegg, mapping = aes(x = X37_EVIDENCE , y = K11294)) + geom_boxplot()
+```
