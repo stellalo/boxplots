@@ -11,8 +11,8 @@ library(ggplot2)
 
 ```{r}
 #Load dataframe
-temp_oob_train <- read.delim("/Users/stella/RF Loop Results/training_contingency.txt", sep = " ", header = T)
-temp_oob_test <- read.delim("/Users/stella/RF Loop Results/testing_contingency.txt", sep = " ", header = T)
+temp_oob_train <- read.delim("RF Loop Results/training_contingency.txt", sep = " ", header = T)
+temp_oob_test <- read.delim("RF Loop Results/testing_contingency.txt", sep = " ", header = T)
 
 temp <- data.frame(meanErr = c(temp_oob_train$MeanErr,temp_oob_test$MeanErr),type = c(rep("train", 100),rep("test",100)))
 
@@ -26,8 +26,8 @@ ggplot(data = temp, mapping = aes(x = type , y = meanErr)) + geom_boxplot() + la
 
 ```{r}
 #Load dataframe
-resistance_1_oob_train <- read.delim("/Users/stella/resistance/X_FC_resistance/training_contingency_resistance_1.txt", sep = " ", header = T)
-resistance_1_oob_test <- read.delim("/Users/stella/resistance/X_FC_resistance/testing_contingency_resistance_1.txt", sep = " ", header = T)
+resistance_1_oob_train <- read.delim("resistance/X_FC_resistance/training_contingency_resistance_1.txt", sep = " ", header = T)
+resistance_1_oob_test <- read.delim("resistance/X_FC_resistance/testing_contingency_resistance_1.txt", sep = " ", header = T)
 
 r1 <- data.frame(meanErr = c(resistance_1_oob_train$MeanErr,resistance_1_oob_test$MeanErr),type = c(rep("train", 100),rep("test",100)))
 
@@ -41,8 +41,8 @@ ggplot(data = r1, mapping = aes(x = type , y = meanErr)) + geom_boxplot() + labs
 
 ```{r}
 #Load dataframe
-resistance_2_oob_train <- read.delim("/Users/stella/resistance/Fluconazole_resistance/training_contingency_resistance_2.txt", sep = " ", header = T)
-resistance_2_oob_test <- read.delim("/Users/stella/resistance/Fluconazole_resistance/testing_contingency_resistance_2.txt", sep = " ", header = T)
+resistance_2_oob_train <- read.delim("resistance/Fluconazole_resistance/training_contingency_resistance_2.txt", sep = " ", header = T)
+resistance_2_oob_test <- read.delim("resistance/Fluconazole_resistance/testing_contingency_resistance_2.txt", sep = " ", header = T)
 
 r2 <- data.frame(meanErr = c(resistance_2_oob_train$MeanErr,resistance_2_oob_test$MeanErr),type = c(rep("train", 100),rep("test",100)))
 
@@ -57,8 +57,8 @@ ggplot(data = r2, mapping = aes(x = type , y = meanErr)) + geom_boxplot() + labs
 
 ```{r}
 #Load dataframe
-resistance_3_oob_train <- read.delim("/Users/stella/resistance/Itraconazole_resistance/training_contingency_resistance_3.txt", sep = " ", header = T)
-resistance_3_oob_test <- read.delim("/Users/stella/resistance/Itraconazole_resistance/testing_contingency_resistance_3.txt", sep = " ", header = T)
+resistance_3_oob_train <- read.delim("resistance/Itraconazole_resistance/training_contingency_resistance_3.txt", sep = " ", header = T)
+resistance_3_oob_test <- read.delim("resistance/Itraconazole_resistance/testing_contingency_resistance_3.txt", sep = " ", header = T)
 
 r3 <- data.frame(meanErr = c(resistance_3_oob_train$MeanErr,resistance_3_oob_test$MeanErr),type = c(rep("train", 100),rep("test",100)))
 
@@ -72,8 +72,8 @@ ggplot(data = r3, mapping = aes(x = type , y = meanErr)) + geom_boxplot() + labs
 
 ```{r}
 #Load dataframe
-resistance_4_oob_train <- read.delim("/Users/stella/resistance/Voriconazole_resistance/training_contingency_resistance_4.txt", sep = " ", header = T)
-resistance_4_oob_test <- read.delim("/Users/stella/resistance/Voriconazole_resistance/testing_contingency_resistance_4.txt", sep = " ", header = T)
+resistance_4_oob_train <- read.delim("resistance/Voriconazole_resistance/training_contingency_resistance_4.txt", sep = " ", header = T)
+resistance_4_oob_test <- read.delim("resistance/Voriconazole_resistance/testing_contingency_resistance_4.txt", sep = " ", header = T)
 
 r4 <- data.frame(meanErr = c(resistance_4_oob_train$MeanErr,resistance_4_oob_test$MeanErr),type = c(rep("train", 100),rep("test",100)))
 
@@ -87,8 +87,8 @@ ggplot(data = r4, mapping = aes(x = type , y = meanErr)) + geom_boxplot() + labs
 
 ```{r}
 #Load dataframe
-resistance_5_oob_train <- read.delim("/Users/stella/resistance/Posaconazole_resistance/training_contingency_resistance_5.txt", sep = " ", header = T)
-resistance_5_oob_test <- read.delim("/Users/stella/resistance/Posaconazole_resistance/testing_contingency_resistance_5.txt", sep = " ", header = T)
+resistance_5_oob_train <- read.delim("resistance/Posaconazole_resistance/training_contingency_resistance_5.txt", sep = " ", header = T)
+resistance_5_oob_test <- read.delim("resistance/Posaconazole_resistance/testing_contingency_resistance_5.txt", sep = " ", header = T)
 
 r5 <- data.frame(meanErr = c(resistance_5_oob_train$MeanErr,resistance_5_oob_test$MeanErr),type = c(rep("train", 100),rep("test",100)))
 
@@ -104,8 +104,8 @@ ggplot(data = r5, mapping = aes(x = type , y = meanErr)) + geom_boxplot() + labs
 
 ```{r}
 #Load dataframe
-resistance_6_oob_train <- read.delim("/Users/stella/resistance/Terbinafin_resistance/training_contingency_resistance_6.txt", sep = " ", header = T)
-resistance_6_oob_test <- read.delim("/Users/stella/resistance/Terbinafin_resistance/testing_contingency_resistance_6.txt", sep = " ", header = T)
+resistance_6_oob_train <- read.delim("resistance/Terbinafin_resistance/training_contingency_resistance_6.txt", sep = " ", header = T)
+resistance_6_oob_test <- read.delim("resistance/Terbinafin_resistance/testing_contingency_resistance_6.txt", sep = " ", header = T)
 
 r6 <- data.frame(meanErr = c(resistance_6_oob_train$MeanErr,resistance_6_oob_test$MeanErr),type = c(rep("train", 100),rep("test",100)))
 
@@ -118,8 +118,8 @@ ggplot(data = r6, mapping = aes(x = type , y = meanErr)) + geom_boxplot() + labs
 ```
 
 ```{r}
-resistance_7_oob_train <- read.delim("/Users/stella/resistance/Caspofungi_resistance/training_contingency_resistance_7.txt", sep = " ", header = T)
-resistance_7_oob_test <- read.delim("/Users/stella/resistance/Caspofungi_resistance/testing_contingency_resistance_7.txt", sep = " ", header = T)
+resistance_7_oob_train <- read.delim("resistance/Caspofungi_resistance/training_contingency_resistance_7.txt", sep = " ", header = T)
+resistance_7_oob_test <- read.delim("resistance/Caspofungi_resistance/testing_contingency_resistance_7.txt", sep = " ", header = T)
 
 r7 <- data.frame(meanErr = c(resistance_7_oob_train$MeanErr,resistance_7_oob_test$MeanErr),type = c(rep("train", 100),rep("test",100)))
 
@@ -132,8 +132,8 @@ ggplot(data = r7, mapping = aes(x = type , y = meanErr)) + geom_boxplot() + labs
 ```
 
 ```{r}
-resistance_8_oob_train <- read.delim("/Users/stella/resistance/Amphotericin_B_resistance/training_contingency_resistance_8.txt", sep = " ", header = T)
-resistance_8_oob_test <- read.delim("/Users/stella/resistance/Amphotericin_B_resistance/testing_contingency_resistance_8.txt", sep = " ", header = T)
+resistance_8_oob_train <- read.delim("resistance/Amphotericin_B_resistance/training_contingency_resistance_8.txt", sep = " ", header = T)
+resistance_8_oob_test <- read.delim("resistance/Amphotericin_B_resistance/testing_contingency_resistance_8.txt", sep = " ", header = T)
 
 r8 <- data.frame(meanErr = c(resistance_8_oob_train$MeanErr,resistance_8_oob_test$MeanErr),type = c(rep("train", 100),rep("test",100)))
 
@@ -146,8 +146,8 @@ ggplot(data = r8, mapping = aes(x = type , y = meanErr)) + geom_boxplot() + labs
 ```
 
 ```{r}
-resistance_9_oob_train <- read.delim("/Users/stella/resistance/Resistance_to_azoles/training_contingency_resistance_9.txt", sep = " ", header = T)
-resistance_9_oob_test <- read.delim("/Users/stella/resistance/Resistance_to_azoles/training_contingency_resistance_9.txt", sep = " ", header = T)
+resistance_9_oob_train <- read.delim("resistance/Resistance_to_azoles/training_contingency_resistance_9.txt", sep = " ", header = T)
+resistance_9_oob_test <- read.delim("resistance/Resistance_to_azoles/training_contingency_resistance_9.txt", sep = " ", header = T)
 
 r9 <- data.frame(meanErr = c(resistance_9_oob_train$MeanErr,resistance_9_oob_test$MeanErr),type = c(rep("train", 100),rep("test",100)))
 
