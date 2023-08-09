@@ -40,7 +40,7 @@ kegg$X37_EVIDENCE <- as.factor(kegg$X37_EVIDENCE)
 <img width="966" alt="K19306" src="https://github.com/stellalo/boxplots/assets/89308696/2e75dd70-e4c8-482f-9558-4f5087b35fc2">
 
 <h2>🦠 boxplot_pa.Rmd Walk-Through:</h2>
-This script visualizes KEGG presence/absence for species that survive/dies at temperature 37 Celcius using boxplots from the ggplot2 library.
+This script visualizes KEGG presence/absence for species that survive/dies at temperature 37 Celsius using boxplots from the ggplot2 library.
 
 - To change the KEGG values from gene expression to presence/absence, convert any value greater than 0 to 1:
 
