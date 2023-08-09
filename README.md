@@ -16,7 +16,7 @@ library(ggplot2)
 ```
 
 <h2>🦠 boxplot.Rmd Walk-Through:</h2>
-This script visualizes KEGG gene expression for species that survive/dies at temperature 37 Celcius using boxplots from the ggplot2 library.
+This script visualizes KEGG gene expression for species that survives/dies at temperature 37 Celsius using boxplots from the ggplot2 library.
 
 <br/>
 <br/>
@@ -34,7 +34,7 @@ kegg$X37_EVIDENCE <- as.factor(kegg$X37_EVIDENCE)
 
 <br/>
 
-- Run ggplot2 to get boxplt:
+- Run ggplot2 to get boxplot:
 <br/>
 
 <img width="966" alt="K19306" src="https://github.com/stellalo/boxplots/assets/89308696/2e75dd70-e4c8-482f-9558-4f5087b35fc2">
